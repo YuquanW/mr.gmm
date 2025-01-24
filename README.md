@@ -34,7 +34,7 @@ plot_wald(res)
 plot_scatter(res)
 ```
 
-To reproduce the simulation results or perform pseudo-$p$-value-based LD clumping, please refer to the [Clumping](https://github.com/YuquanW/Clumping) repository, specifically the `Batch_simu.py` and `LDclumping.sh` scripts.
+To reproduce the simulation results or perform pseudo-$`p`$-value-based LD clumping, please refer to the [Clumping](https://github.com/YuquanW/Clumping) repository, specifically the `Batch_simu.py` and `LDclumping.sh` scripts.
 
 ## Reference
 
