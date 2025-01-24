@@ -1,11 +1,27 @@
 Package: mr.gmm
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Mendelian Randomization Using a Four-Cluster Gaussian Mixture Model
+Version: 1.0.0
+Authors@R: c(person("Yuquan", "Wang", email = "21110700112@m.fudan.edu.cn", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6656-7443")), person("Yue-Qing", "Hu", email = "yuehu@fudan.edu.cn", role = c("aut"), comment = c(ORCID = "0000-0002-5730-0317")))
+Reference:
+    Yuquan Wang, Yunlong Cao, Dong Chen, Dapeng Shi, Liwan Fu, Anqi Chen, Siyuan Shen, Yue-Qing Hu.
+    Pseudo-p-Value-Based Clumping Enhanced Proteome-wide Mendelian Randomization with Application in Identifying Coronary Heart Disease-Associated Plasma Proteins.
+    \doi{https://doi.org/10.1101/2025.01.13.25320450}
+Description: Perform two-sample Mendelian randomization analysis and generate visualizations of the results.
+    The deterministic annealing expectation-maximization (DAEM) algorithm is applied to fit the mixture model.
+License: MIT + file LICENSE
 Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
 LazyData: true
+BugReports: https://github.com/YuquanW/mr.gmm/issues
+Depends: 
+    R (>= 3.5)
+Suggests: 
+    gtools,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    graphics,
+    grDevices,
+    stats
