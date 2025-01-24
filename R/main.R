@@ -90,6 +90,7 @@ mr.gmm <- function(beta_exp,
     inits$tau <- rgamma(1, 2, scale = 10000)
     inits$eta <- rgamma(1, 2, scale = 100)
     inits$pi <- gtools::rdirichlet(1, rep(1, 4))
+    inits$pi <- inits$pi/sum(inits$pi)
   }
   required_names <- c("beta", "tau", "eta", "pi")
 
