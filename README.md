@@ -13,7 +13,7 @@ devtools::install_github("YuquanW/mr.gmm")
 
 ## Usage
 
-We suggest to preprocess your data with `TwoSampleMR::harmonise_data()`. One can test the example datasets included in the package by:
+We recommend preprocessing your data using `TwoSampleMR::harmonise_data()`. You can test the example datasets included in the package by running the following:
 
 ```
 ## Use p<0.05 as IV selection threshold
@@ -34,9 +34,13 @@ plot_wald(res)
 plot_scatter(res)
 ```
 
-To reproduce the simulation results or conduct pseudo-$p$-value-based LD clumping, please view the [Clumping](https://github.com/YuquanW/Clumping) repository (`Batch_simu.py` and `LDclumping.sh`).
+To reproduce the simulation results or perform pseudo-$p$-value-based LD clumping, please refer to the [Clumping](https://github.com/YuquanW/Clumping) repository, specifically the `Batch_simu.py` and `LDclumping.sh` scripts.
 
 ## Reference
 
 Yuquan Wang, Yunlong Cao, Dong Chen, Dapeng Shi, Liwan Fu, Anqi Chen, Siyuan Shen, Yue-Qing Hu. Pseudo-p-Value-Based Clumping Enhanced Proteome-wide Mendelian Randomization with Application in Identifying Coronary Heart Disease-Associated Plasma Proteins. doi:
 [https://doi.org/10.1101/2025.01.13.25320450](https://doi.org/10.1101/2025.01.13.25320450)
+
+## Contact
+
+If you encounter any issues, please report them on the [Issues](https://github.com/YuquanW/mr.gmm/issues) page or contact Dr. Yuquan Wang (21110700112\@m.fudan.edu.cn) and Prof. Yue-Qing Hu (yqhu\@fudan.edu.cn).
