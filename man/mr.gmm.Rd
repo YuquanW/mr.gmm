@@ -55,17 +55,19 @@ If \code{DA = TRUE}, \code{xi} defaults to 0.1; otherwise, it is set to 1.}
 }
 \value{
 A list containing the following components:
-*\code{data} An m × 4 data frame of the input GWAS data.
-*\code{beta.hat} The causal effect estimate.
-*\code{beta.se} The standard error of \code{beta_hat}.
-*\code{beta.p.value} The p-value from the two-tailed Wald test for \eqn{H_0: \beta=0}.
-*\code{tau.hat} The estimated inverse variance of latent pleiotropic effects on the outcome.
-*\code{eta.hat} The estimated inverse variance of latent SNP effects on the exposure.
-*\code{rho} An m × 4 matrix indicating the estimated latent probabilities of each SNP belonging to the four clusters.
-*\code{pi} The estimated probabilities for the four clusters.
-*\code{ELBO} A vector recording the Evidence Lower BOund (ELBO) at each iteration, useful for assessing convergence.
-*\code{cluster} An m × 2 data frame. The first column contains the most probable cluster assignments for each SNP, and the second column contains the corresponding estimated latent probabilities.
-*\code{iter} The total number of iterations performed by the DAEM algorithm.
+\itemize{
+\item \code{data} An m × 4 data frame of the input GWAS data.
+\item \code{beta.hat} The causal effect estimate.
+\item \code{beta.se} The standard error of \code{beta_hat}.
+\item \code{beta.p.value} The p-value from the two-tailed Wald test for \eqn{H_0: \beta=0}.
+\item \code{tau.hat} The estimated inverse variance of latent pleiotropic effects on the outcome.
+\item \code{eta.hat} The estimated inverse variance of latent SNP effects on the exposure.
+\item \code{rho} An m × 4 matrix indicating the estimated latent probabilities of each SNP belonging to the four clusters.
+\item \code{pi} The estimated probabilities for the four clusters.
+\item \code{ELBO} A vector recording the Evidence Lower BOund (ELBO) at each iteration, useful for assessing convergence.
+\item \code{cluster} An m × 2 data frame. The first column contains the most probable cluster assignments for each SNP, and the second column contains the corresponding estimated latent probabilities.
+\item \code{iter} The total number of iterations performed by the DAEM algorithm.
+}
 }
 \description{
 Main function for MR-GMM

@@ -25,17 +25,17 @@
 #' @param tol The convergence tolerance. Default is 1e-7.
 #'
 #' @return A list containing the following components:
-#' *`data` An m × 4 data frame of the input GWAS data.
-#' *`beta.hat` The causal effect estimate.
-#' *`beta.se` The standard error of `beta_hat`.
-#' *`beta.p.value` The p-value from the two-tailed Wald test for \eqn{H_0: \beta=0}.
-#' *`tau.hat` The estimated inverse variance of latent pleiotropic effects on the outcome.
-#' *`eta.hat` The estimated inverse variance of latent SNP effects on the exposure.
-#' *`rho` An m × 4 matrix indicating the estimated latent probabilities of each SNP belonging to the four clusters.
-#' *`pi` The estimated probabilities for the four clusters.
-#' *`ELBO` A vector recording the Evidence Lower BOund (ELBO) at each iteration, useful for assessing convergence.
-#' *`cluster` An m × 2 data frame. The first column contains the most probable cluster assignments for each SNP, and the second column contains the corresponding estimated latent probabilities.
-#' *`iter` The total number of iterations performed by the DAEM algorithm.
+#' * `data` An m × 4 data frame of the input GWAS data.
+#' * `beta.hat` The causal effect estimate.
+#' * `beta.se` The standard error of `beta_hat`.
+#' * `beta.p.value` The p-value from the two-tailed Wald test for \eqn{H_0: \beta=0}.
+#' * `tau.hat` The estimated inverse variance of latent pleiotropic effects on the outcome.
+#' * `eta.hat` The estimated inverse variance of latent SNP effects on the exposure.
+#' * `rho` An m × 4 matrix indicating the estimated latent probabilities of each SNP belonging to the four clusters.
+#' * `pi` The estimated probabilities for the four clusters.
+#' * `ELBO` A vector recording the Evidence Lower BOund (ELBO) at each iteration, useful for assessing convergence.
+#' * `cluster` An m × 2 data frame. The first column contains the most probable cluster assignments for each SNP, and the second column contains the corresponding estimated latent probabilities.
+#' * `iter` The total number of iterations performed by the DAEM algorithm.
 #'
 #' @export
 #'
